@@ -1,0 +1,36 @@
+% !TEX ROOT = ../Thesis.tex
+%-
+%-> 中文摘要
+%-
+\chapter{摘\quad 要}\chaptermark{摘\quad 要}% 摘要标题
+% \setcounter{page}{1}% 开始页码
+% \pagenumbering{Roman}% 页码符号
+% 22p / 12p = 1.83
+\linespread{1.5}
+\zihao{-4}
+% \setlength{\baselineskip}{20pt}
+
+信息可视化主要研究非数值型信息资源的视觉展示，以达到帮助人们理解并分析数据的目的。随着科技的不断发展，图亦或是网络在我们的生活中出现的越来越多，图数据的产生速度和存储规模也符合大数据时代的发展趋势。与此同时，这些复杂结构中蕴含的隐藏信息也越来越多，对这些网络的进行高效的分析、挖掘及视觉呈现一直是数据科学及可视化领域的研究热点。在这一背景下，诸如社交网络等传统的图数据达到了前所未有的规模，经典的单机可视化解决方案已经无法高效的对海量图数据进行展现，传统的基于数据处理的数据挖掘策略又很难直观的描述或解释其结果。因此迫切需要一种可以有效展现海量图数据的可视化解决方案，以达到在可容忍的时间内对大规模图数据进行直观、可解释的可视分析。如何缩短处理时间以及如何直观、有意义的对数据进行布局展现是一个十分具有挑战性的课题，这也是本文的主要研究内容。
+
+在保证布局质量方面，本文首先分析了单机布局方案的局限性和各种已有分布式处理模型的特点。随后在分层抽样算法及K核分解思想的基础上，提出了面向大图的抽样算法，在尽可能保证抽样结构相似性的前提下对大规模图数据进行分层抽样，最终的实验证明，该方法在抽样结构的相似性上有着比SBS、SS等算法更好的表现，能够更好的保留原结构的拓扑信息。
+
+在改善布局算法方面，本文通过将抽样方法应用到布局过程中，分层逐级对图数据进行显示。为此，本文实现了基于GraphX的力导向布局算法，并将其与上述分层抽样算法结合，由简入繁逐渐细化地对原结构进行布局及展示。在大规模数据处理的过程中，该方案能够有效减少计算需求，并且能够更加灵活的适应可视分析的需要。
+
+最后，本文设计了大规模图数据可视化原型系统，基于GraphX实现分层布局算法，借助浏览器（B/S结构）实现整个可视化界面。并借助此系统对上述提出的抽样及布局算法进行了实验。与现有的单机系统相比，可以处理前者无法有效处理的大图数据；同时与已有的分布式可视化系统相比，可以赋予使用者更细粒度的视图控制能力并得到更清晰的结果展示。
+
+
+\keywords{图数据抽样; 分层图布局; 分布式计算; K核分解}% 中文关键词
+%-
+%-> 英文摘要
+%-
+\chapter{Abstract}\chaptermark{Abstract}% 摘要标题
+
+Information visualization mainly studies the visual display of non-numerical information resources in order to help people understand and analyze data. With the continuous development of science and technology, more and more graphs or networks appear in our lives. The speed and storage scale of graph data also conform to the development trend of the era of big data. At the same time, more and more hidden information is contained in these complex structures. Efficient analysis, mining and visual presentation of these networks has always been a research hotspot in the field of data science and visualization. In this context, traditional graph data such as social networks have reached an unprecedented scale. The classical single-machine visualization solution has been unable to effectively display large amounts of graph data. The traditional data mining strategy based on data processing is difficult to intuitively describe or explain the results. Therefore, there is an urgent need for a visualization solution that can effectively display massive graph data in order to achieve intuitive and interpretable visual analysis of large-scale graph data in tolerable time. How to shorten the processing time and how to visually and meaningfully display the layout of data is a very challenging topic, which is also the main research content of this thesis.
+
+In order to ensure the layout quality, this thesis first analyses the limitations of the single-machine layout scheme and the characteristics of various existing distributed processing models. Subsequently, on the basis of hierarchical sampling algorithm and K-kernel decomposition idea, a large-scale graph-oriented sampling algorithm is proposed. On the premise of ensuring the similarity of sampling structure as much as possible, the large-scale graph data are stratified sampled. The final experiment proves that this method has better performance than other algorithms in the similarity of sampling structure, and can better retain the topological information of the original structure.
+
+In order to improve the layout algorithm, the sampling method is applied to the layout process, and the graph data is displayed hierarchically and step by step. To this end, this thesis implements a force-oriented layout algorithm based on GraphX, and combines it with the above-mentioned hierarchical sampling algorithm, which gradually refines the layout and display of the original structure from simplicity to complexity. In the process of large-scale data processing, this scheme can effectively reduce the computational requirements and be more flexible to meet the needs of visual analysis.
+
+Finally, this thesis designs a large-scale graphics data visualization prototype system, using GraphX to compute the coordinates of graph nodes, using B/S mode to achieve the entire visualization interface with the help of browser. With the help of this system, the sampling and layout algorithms proposed above are experimented. Compared with the existing single-machine system, it can deal with the large-scale map data which the former can not effectively handle; at the same time, compared with the existing distributed visualization system, it can give users more fine-grained view control ability and get clearer results display.
+
+\englishkeywords{Graph sampling; Hierarchical layout; Distributed computing; K-core decomposition }
