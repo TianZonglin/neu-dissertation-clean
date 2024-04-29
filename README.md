@@ -4,22 +4,22 @@ This is the clean version of Latex template for the NEU master's dissertation. A
 .\neu-dissertation-clean
 │
 ├─Biblio                              
-│  └─ref.bib                // put your references here.
-├─Img                       // put images you used here.
-├─Style                     // control the display of content, it's already fit for NEU's requirements.
+│  └─ref.bib            // put your references here.
+├─Img               // put images you used here.
+├─Style             // control the display of content, it's already fit for NEU's requirements.
 ├─Tex
 │  ├─Abstract.tex           
-│  ├─Frontpages.tex         // write the information on your first page here.
-│  ├─Mainmatter.tex         // write the structure of your content.
-│  ├─Chap_01.tex            // chapter content.
+│  ├─Frontpages.tex     // write the information on your first page here.
+│  ├─Mainmatter.tex     // write the structure of your content.
+│  ├─Chap_01.tex        // chapter content.
 │  ├─Chap_02.tex                     
 │  ├─Chap_03.tex                     
 │  ├─Chap_04.tex                     
 │  ├─Chap_05.tex                     
 │  ├─Chap_06.tex      
-│  └─Backmatter.tex         // write the last page: acknowledgment and your bio (papers & projects) here.
-├─Thesis.tex                // the global structure of your tex files.
-└─Thesis.pdf                // the final compiled pdf, this is your dissertation!
+│  └─Backmatter.tex     // write the last page: acknowledgment and your bio (papers & projects) here.
+├─Thesis.tex        // the global structure of your tex files.
+└─Thesis.pdf        // the final compiled pdf, this is your dissertation!
 ```
 
 The content tex files include some examples (not totally clean) so that you can quickly be reused them in your cases, like introducing tables, images, and algorithms.
